@@ -1,0 +1,23 @@
+//
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true, // Since JavaScript is being used
+    "checkJs": false, // Optional, to avoid strict checking on JS files
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "vite.config.ts", // Include your Vite config specifically if it remains in TypeScript
+    "./src/**/*" // Include source files if they benefit from TS checks
+  ]
+}
